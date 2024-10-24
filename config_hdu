@@ -1,0 +1,16 @@
+Host injump 
+    HostName 10.14.115.87
+    User fangjunjie 
+    Port 22 
+    IdentityFile C:\Users\86188\.ssh\fangjunjie 
+
+Host in123 
+    HostName 192.168.1.100 
+    User fangjunjie 
+    Port 22
+    IdentityFile C:\Users\86188\.ssh\fangjunjie 
+    ProxyCommand ssh -W %h:%p injump  
+    ServerAliveCountMax 5   
+    ServerAliveInterval 60
+
+
